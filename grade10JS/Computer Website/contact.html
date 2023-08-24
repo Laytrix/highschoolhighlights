@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Computer Hardware - EvolveTech</title>
+  </head>
+
+  <body>
+    <!--navigation bar and search bar-->
+      <div class="topnav">
+        <a href="home.html"><img id="logo" src="logo.png"/></a>
+        <a class="nav-link" href="home.html">Home</a>
+        <div class="dropdown">
+          <a id="dropbtn" class="nav-link" href="products.html">Our Laptops</a>
+            <div class="dropdown-content">
+              <a class="dropdownbox" href="nitro7.html">Acer Nitro 7</a>
+              <a class="dropdownbox" href="macbookpro.html">MacBook Pro 13"</a>
+              <a class="dropdownbox" href="thinkpadx13.html">Lenovo ThinkPad X13</a>
+            </div>
+        </div>
+        <a class="nav-link" href="hardware.html">Computer Hardware</a>
+        <a class="nav-link" href="contact.html">Contact Us/Feedback</a>
+        <form action="#">
+          <button type="submit" id="searchbutton"><img src="https://www.flaticon.com/svg/static/icons/svg/1086/1086933.svg" id="searchicon"></button>
+          <input type="text" placeholder="Search.." name="search" id="searchbox">
+        </form>
+      </div>
+
+  <!--"shop online" text-->
+      <p id="shoponline"><a id="online" href="products.html">Shop online</a> and get free-shipping, no-contact delivery, and more!</p>
+
+  <!--feedback form-->
+      <p class="basicheadings">Feedback/Customer Support Form</p>
+      <p class="description">Leave any feedback or problems in this form below! If you submitted any encountered issue, our customer support team will reach out to you as soon as possible.</p>
+
+      <br>
+
+      <form action="#">
+        <center>
+        <table class="formtable">
+          <tr>
+            <td class="formitems"><label for="fname">First Name:</label></td>
+            <td><input type="text" id="fname" name="fname" class="formfill"></td>
+          </tr>
+
+          <tr>
+            <td class="formitems"><label for="lname">Last Name:</label></td>
+            <td><input type="text" id="lname" name="lname" class="formfill"></td>
+          </tr>
+
+          <tr>
+            <td class="formitems"><label for="address">Address:</label></td>
+            <td><input type="text" id="address" name="address" class="formfill"></td>
+          </tr>
+
+          <tr>
+            <td class="formitems"><label for="zip">Zip code:</label></td>
+            <td><input type="text" id="zip" name="zip" class="formfill"></td>
+          </tr>
+
+          <tr>
+            <td class="formitems"><label for="city">City:</label></td>
+            <td><input type="text" id="city" name="city" class="formfill"></td>
+          </tr>
+
+          <tr>
+            <td class="formitems"><label for="sp">State/Province:</Label></td>
+            <td><input type="text" id="sp" name="state/prov" class="formfill"></td>
+          </tr>
+
+          <tr>
+            <td class="formitems"><label for="country">Country:</label></td>
+            <td>
+              <select id="country" name="country" class="formfillspec">
+                <option value="select">Select a country</option>
+                <option value="CA">Canada</option>
+                <option value="NA">United States</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><hr></td>
+          </tr>
+
+          <tr>
+            <td class="formitems"><label for="product">Product:</label></td>
+            <td>
+              <select id="product" name="product" class="formfillspec">
+                <option value="select">Select a product</option>
+                <option value="acernitro7">Acer Nitro 7</option>
+                <option value="macbookpro">MacBook Pro</option>
+                <option value="thinkpadx13">ThinkPad X13</option>
+                <option value="other">Other, please specify below</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td><input type="text" id="product" placeholder="Other:" name="product" class="formfill"></td>
+          </tr>
+
+          <tr>
+            <td class="formitems"><label for="date_pur">Date purchased:</label></td>
+            <td><input type="text" id="date_pur" name="date_pur" class="formfill"></td>
+          </tr>
+
+          <tr>
+            <td class="formitems"><label for="serial">Serial #:</label></td>
+            <td><input type="text" id="serial" name="serial" class="formfill"></td>
+          </tr>
+
+          <tr>
+            <td class="formitems" valign="top">Used For:</td>
+            <td class="formitems2" align="left">
+              <input type="radio" id="home" name="use" value="Home">
+              <label for="home">Home</label>
+            <br>
+              <input type="radio" id="business" name="use" value="Business">
+              <label for="business">Business</label>
+            <br>
+              <input type="radio" id="government" name="use" value="Government">
+              <label for="government">Government</label>
+            <br>
+              <input type="radio" id="educational" name="use" value="Educational">
+              <label for="educational">Educational</label>
+            <br>
+              <input type="radio" id="other" name="use" value="Other">
+              <label for="other">Other</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="formitems" valign="top" style="padding-top: 10px">Operating system (check all that apply):</td>
+            <td class="formitems2" align="left" style="padding-top: 10px">
+              <input type="checkbox" id="sys1" name="sys1" value="Windows">
+              <label for="sys1">Windows</label>
+            <br>
+              <input type="checkbox" id="sys2" name="sys2" value="Macintosh">
+              <label for="sys2">Macintosh</label>
+            <br>
+              <input type="checkbox" id="sys3" name="sys3" value="Unix">
+              <label for="sys3">Unix</label>
+            <br>
+              <input type="checkbox" id="sys4" name="sys4" value="Linux">
+              <label for="sys4">Linux</label>
+            <br>
+              <input type="checkbox" id="sys5" name="sys5" value="Other">
+              <label for="sys5">Other</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><hr></td>
+          </tr>
+
+          <tr>
+            <td class="formitems" valign="top">Feedback:</td>
+            <td><textarea id="textarea" name="feedback" rows="5" cols="45" placeholder="Any feedback you have:"></textarea></td>
+          </tr>
+
+          <tr>
+            <td class="formitems">Overall experience:</td>
+             <td><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+          </tr>
+
+          <tr>
+            <td class="formitems">Add me to the mailing list?</td>
+            <td>
+              <input type="radio" id="yes" name="mail" value="Yes">
+              <label for="yes">Yes</label>
+              &nbsp;
+              <input type="radio" id="no" name="mail" value="No">
+              <label for="no">No</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="formitems"><label>E-mail Address:</label></td>
+            <td><input type="text" id="email" name="email" class="formfill"></td>
+          </tr>
+
+          </table>
+
+          <br>
+          <button onclick="register()" class="explorebutton" type="submit">Click to Register</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="explorebutton" type="reset">Click to Reset</button>
+          </center>
+
+      </form>
+
+      <br>
+      <hr>
+
+
+  <!--contact information-->
+      <p class="basicheadings">Contact Information</p>
+      <center>
+      <table id="hardwaretable" border="2px" cellspacing="0px">
+        <tr>
+          <td class="contacts">Email Address:</td>
+          <td class="contacts"><a href="#" id="number">customersupport@evolvetech.ca</a></td>
+        </tr>
+        <tr>
+          <td class="contacts">Phone Number:</td>
+          <td class="contacts"><a href="#" id="number">(123) 456-789</a></td>
+        </tr>
+        <tr>
+          <td class="contacts">Headquarters Address:</td>
+          <td class="contacts">1234 Parkway Drive</td>
+        </tr>
+      </table>
+      </center>
+      <br>
+      <br>
+
+  <!--copyright-->
+    <p id="shoponline">Copyright © 2020 EvolveTech Inc. All rights reserved.</p>
+
+  <!--some javascript I added for an alert to pop up after the register button is pressed-->
+  <script>
+    function register() {
+      alert("Your response has been submitted successfully. Thank you.");
+    }
+  </script>
+
+  </body>
+</html>

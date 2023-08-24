@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Our Laptops - EvolveTech</title>
+  </head>
+
+  <body>
+    <!--navigation bar and search bar-->
+      <div class="topnav">
+        <a href="home.html"><img id="logo" src="logo.png"/></a>
+        <a class="nav-link" href="home.html">Home</a>
+        <div class="dropdown">
+          <a id="dropbtn" class="nav-link" href="products.html">Our Laptops</a>
+            <div class="dropdown-content">
+              <a class="dropdownbox" href="nitro7.html">Acer Nitro 7</a>
+              <a class="dropdownbox" href="macbookpro.html">MacBook Pro 13"</a>
+              <a class="dropdownbox" href="thinkpadx13.html">Lenovo ThinkPad X13</a>
+            </div>
+        </div>
+        <a class="nav-link" href="hardware.html">Computer Hardware</a>
+        <a class="nav-link" href="contact.html">Contact Us/Feedback</a>
+        <form action="#">
+          <button type="submit" id="searchbutton"><img src="https://www.flaticon.com/svg/static/icons/svg/1086/1086933.svg" id="searchicon"></button>
+          <input type="text" placeholder="Search.." name="search" id="searchbox">
+        </form>
+      </div>
+
+  <!--"shop online" text-->
+      <p id="shoponline"><a id="online" href="products.html">Shop online</a> and get free-shipping, no-contact delivery, and more!</p>
+
+  <!--heading and description-->
+    <p class="basicheadings">Featured Laptops</p>
+    <p class="description">Check out our newest laptops here! We have picked out three laptops that are suitable for three groups of people: gamers, students/workers, and graphic/video designers! Pick up your best mate today and be ahead of the game!</p>
+
+  <!--image slideshow-->
+  <br>
+  <table id="slidetable" align="center">
+    <tr>
+      <td>
+        <button id="button-left" onclick="plus(-1)">&#10094;</button>
+      </td>
+      <td>
+        <div class="laptops">
+          <center>
+            <a href="nitro7.html"><img id="laptop1" class="slides" src="nitro7img.png"></a>
+            <a href="macbookpro.html"><img id="laptop2" class="slides" src="macbookproimg.png"></a>
+            <a href="thinkpadx13.html"><img id="laptop3" class="slides" src="thinkpadx13img.png"></a>
+          </center>
+        </div>
+      </td>
+      <td>
+        <button id="button-right" onclick="plus(+1)">&#10095;</button>
+      </td>
+    </tr>
+    </table>
+    <br>
+    <p class="description">
+      Having trouble finding the perfect laptop? Go to the <a href="contact.html" class="hyptext">contacts page</a> and one of our amazing employees will help you out! Due to the spread of COVID-19, we encourage everyone to shop online. We ensure that all of our packages are disinfected and delivered on time. If you have any concerns or feedback, feel free to contact us via email/phone or fill out the feedback/support form <a href="contact.html" class="hyptext">here</a>. Thank you for choosing EvolveTech!
+    <p>
+    <br>
+
+  <!--copyright-->
+    <p id="shoponline">Copyright © 2020 EvolveTech Inc. All rights reserved.</p>
+
+  <!--javascript for the image slideshow-->
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plus(n) {
+    showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("slides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+      x[slideIndex-1].style.display = "block";
+    }
+  </script>
+  </body>
+
+</html>
