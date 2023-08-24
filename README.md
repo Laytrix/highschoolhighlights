@@ -1,8 +1,6 @@
 # Highschool
-REPO CURRENTLY A WORK-IN-PROGRESS AS I TRANSFER ALL MY CODE IN.
-
 This repository includes the final project for my programming classes from grade 10, 11, and 12.
-Most of the code from these projects are available in this repository, however some code is lost to time.
+Most of the resources from these original projects are available in this repository. However some code is lost to time, and many images (mainly from my grade 10 project).
 
 Grade 10 featured mostly HTML and CSS, with some Javascript programming.
 The final product was an individual project to create a website to sell computers.
